@@ -4,6 +4,11 @@ import os
 import chromadb
 from dotenv import load_dotenv
 
+import sys
+import pysqlite3
+sys.modules["sqlite3"] = pysqlite3
+
+
 # Load environment variables
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
