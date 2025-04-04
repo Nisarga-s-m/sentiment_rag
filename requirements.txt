@@ -7,4 +7,5 @@ chromadb
 uvicorn
 fastapi
 pydantic
+pysqlite3-binary
 
