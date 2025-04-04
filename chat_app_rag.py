@@ -1,7 +1,6 @@
 import streamlit as st
 import openai
 import os
-import chromadb
 from dotenv import load_dotenv
 
 import sys
@@ -13,7 +12,7 @@ try:
     sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")
 except ImportError:
     print("pysqlite3 not found. Ensure it is installed.")
-
+import chromadb
 
 # Load environment variables
 load_dotenv()
